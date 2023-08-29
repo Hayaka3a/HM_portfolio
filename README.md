@@ -4,7 +4,6 @@
 
 npm にてインストール
 
-- @chakra-ui/react @emotion/react @emotion/styled Framer-motion
 - lottie-web
 
 ## Note

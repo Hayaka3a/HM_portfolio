@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "HayakawaM - portfolio",
-  description: "早川実穂のポートフォリオサイトです。",
+  description: "早川実穂のポートフォリオ",
 };
 
 export default function RootLayout({
@@ -17,8 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
-      <Menuber />
+      <body className={inter.className}>
+        <div className="container">{children}</div>
+        {/* <Menuber /> */}
+      </body>
     </html>
   );
 }

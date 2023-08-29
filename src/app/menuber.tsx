@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Menuber() {
   return (
-    <div className="main">
-      <div className="leftSide"></div>
+    <main className="main">
+      <div className="leftSide">×</div>
       <div className="link">
         <Link href="/about">about</Link>
         <Link href="/production">production</Link>
@@ -14,6 +14,6 @@ export default function Menuber() {
         <p className="name">Hayakawa Miho</p>
         <img alt="GitHub" src="/githubIcon.png" />
       </div>
-    </div>
+    </main>
   );
 }

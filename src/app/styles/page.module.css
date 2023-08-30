@@ -20,9 +20,10 @@
   width: 5%;
 }
 
-.p {
+.link {
   writing-mode: vertical-rl; /* テキストの表示方向を縦書きに */
   text-orientation: upright; /* テキストの向きを調整 */
-  margin: 7vh auto;
+  margin-top: 7vh;
+  margin-left: 35%;
   font-weight: 200;
 }

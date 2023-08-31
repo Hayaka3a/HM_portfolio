@@ -5,6 +5,7 @@
 npm にてインストール
 
 - lottie-web
+- firebase-tools
 
 ## Note
 

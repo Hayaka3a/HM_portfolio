@@ -5,6 +5,7 @@
 npm にてインストール
 
 - lottie-web
+- lottiefiles/react-lottie-player
 - firebase-tools
 
 ## Note

@@ -23,7 +23,7 @@
 .link {
   writing-mode: vertical-rl; /* テキストの表示方向を縦書きに */
   text-orientation: upright; /* テキストの向きを調整 */
-  margin-top: 7vh;
+  margin-top: 5vh;
   margin-left: 35%;
   font-weight: 200;
 }

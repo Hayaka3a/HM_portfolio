@@ -17,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <div className="container">{children}</div>
-        {/* <Menuber /> */}
+        <Menuber />
       </body>
     </html>
   );

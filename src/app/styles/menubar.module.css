@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 3.5rem;
+  position: absolute; /*←絶対位置*/
+  bottom: 0; /*下に固定*/
+  font-weight: 200;
+}
+
+.leftSide {
+  width: 5.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg2 {
+}
+@keyframes .svgOpen {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rightSide {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.linkArea {
+  margin: auto 2%;
+}
+
+.link {
+  font-size: large;
+  margin: auto 8%;
+}
+
+.nameArea {
+  display: flex;
+  margin: auto 1%;
+}
+
+.p {
+  width: 24vh;
+  margin: auto 3%;
+}

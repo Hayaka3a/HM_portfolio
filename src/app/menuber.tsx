@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import styles from "./styles/menubar.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Menubar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,7 +40,7 @@ export default function Menubar() {
   }
 
   return (
-    <main className={styles.main}>
+    <div className={styles.all}>
       <div className={styles.leftSide} onClick={menuDisplay}>
         {buttonSwitch()}
       </div>
@@ -70,6 +70,6 @@ export default function Menubar() {
       ) : (
         <></>
       )}
-    </main>
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 .main {
   display: flex;
-  overflow-y: hidden; /* スクロール禁止 */
+  overflow: hidden; /* スクロール禁止 */
+
   height: 100vh;
 }
 

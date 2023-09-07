@@ -1,18 +1,20 @@
 import Top from "@/components/top";
 import styles from "../styles/about.module.css";
+import PageTitle from "@/components/pageTitle";
+import Heading from "@/components/heading";
 
 export default function About() {
   return (
     <>
       <Top />
-      <div className="main">
-        <h1 className="pageTitle">about</h1>
+      <PageTitle />
+      <div className={styles.main}>
+        <Heading title="profile" />
         <div className={styles.plofileBox}>
-          <h2 className="heading">profile</h2>
           <div className={styles.leftSide}>
             <div className={styles.nameBox}>
-              <h3 className={styles.jpName}>早川 実穂</h3>
-              <h3 className={styles.enName}>Hayakawa Miho</h3>
+              <h3 className={styles.name}>早川 実穂</h3>
+              <h3 className={styles.name}>Hayakawa Miho</h3>
             </div>
             <div className={styles.descriptionBox}>
               <p className={styles.description}>
@@ -25,11 +27,11 @@ export default function About() {
             </div>
           </div>
           <div className={styles.rightSide}>
-            <img src="" alt="profile" />
+            <img src="/profile.JPG" alt="profile" className={styles.img} />
           </div>
         </div>
         <div className={styles.skillBox}>
-          <h2 className="heading">skill</h2>{" "}
+          <Heading title="skill" />
           <div className={styles.descriptionBox}>
             <h4 className={styles.itemName}>― 言語</h4>
             <p className={styles.description}>

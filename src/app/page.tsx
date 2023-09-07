@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.sidebar}>
-        <Link href="/" className={styles.link}>
-          HAYAKAWA MIHO
-        </Link>
+        <div className={styles.link}>HAYAKAWA MIHO</div>
       </div>
       <div className={styles.mainVisualBox}>
         <img className={styles.photo} alt="main" src="/main.jpg" />

@@ -1,0 +1,50 @@
+.main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 8vh;
+}
+
+.plofileBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+}
+.leftSide {
+  margin: auto 0;
+  width: 70%;
+}
+.nameBox {
+  display: flex;
+}
+.name {
+  margin-right: 1.5vw;
+  margin-bottom: 2vh;
+  font-size: 4vh;
+  font-weight: 300;
+}
+.descriptionBox {
+  width: 90%;
+}
+
+.rightSide {
+  width: 30%;
+  text-align: center;
+}
+.img {
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.skillBox {
+  margin-bottom: 4vh;
+  height: 34vh;
+}
+.itemName {
+  font-size: large;
+  font-weight: 300;
+}
+.description {
+  margin-bottom: 4vh;
+}

@@ -1,0 +1,36 @@
+.main {
+  width: 80%;
+  margin: 5vh auto;
+  padding-bottom: 8vh;
+  text-align: center;
+}
+
+.p {
+  margin: 5vh auto;
+}
+
+.upper {
+  margin: 3vh;
+}
+.input {
+  height: 4.5vh;
+  width: 20vw;
+  padding-left: 1.5vh;
+  border-radius: 1.2vh;
+  margin: 2vh;
+  margin-bottom: 1.2vh;
+  border: 1px solid black;
+}
+
+.email {
+  margin-left: 2vh;
+}
+.comment {
+  height: 25vh;
+  width: 42vw;
+  padding: 2vh 1.5vh;
+  border-radius: 1.2vh;
+  margin-bottom: 4vh;
+  border: 1px solid black;
+  font-family: "Klee One", "Inter", sans-serif;
+}

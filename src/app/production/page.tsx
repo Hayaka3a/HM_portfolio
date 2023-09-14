@@ -1,3 +1,9 @@
-export default function About() {
-  return <>テスト</>;
+import Top from "@/components/top";
+
+export default function Production() {
+  return (
+    <>
+      <Top />
+    </>
+  );
 }

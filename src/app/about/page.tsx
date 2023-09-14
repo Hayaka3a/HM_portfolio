@@ -7,22 +7,22 @@ export default function About() {
   return (
     <>
       <Top />
-      <PageTitle />
+      <PageTitle title="about" />
       <div className={styles.main}>
         <Heading title="profile" />
-        <div className={styles.plofileBox}>
+        <div className={styles.plofileArea}>
           <div className={styles.leftSide}>
-            <div className={styles.nameBox}>
+            <div className={styles.nameArea}>
               <h3 className={styles.name}>早川 実穂</h3>
               <h3 className={styles.name}>Hayakawa Miho</h3>
             </div>
-            <div className={styles.descriptionBox}>
+            <div className={styles.descriptionArea}>
               <p className={styles.description}>
                 神奈川県横浜市出身です。
                 <br /> <br />
                 2022年10月から株式会社ラクスパートナーズにフロントエンドエンジニアとして所属しています。
                 <br />
-                飼い猫と小説と映画を褒め称える日々を過ごしています。
+                最近購入したカメラで飼い猫を撮りつづける日々を過ごしています。
               </p>
             </div>
           </div>
@@ -30,9 +30,9 @@ export default function About() {
             <img src="/profile.JPG" alt="profile" className={styles.img} />
           </div>
         </div>
-        <div className={styles.skillBox}>
+        <div className={styles.skillArea}>
           <Heading title="skill" />
-          <div className={styles.descriptionBox}>
+          <div className={styles.descriptionArea}>
             <h4 className={styles.itemName}>― 言語</h4>
             <p className={styles.description}>
               HTML / CSS / JavaScript / TypeScript

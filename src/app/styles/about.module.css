@@ -4,7 +4,7 @@
   padding-bottom: 8vh;
 }
 
-.plofileBox {
+.plofileArea {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4vh;
@@ -13,7 +13,7 @@
   margin: auto 0;
   width: 70%;
 }
-.nameBox {
+.nameArea {
   display: flex;
 }
 .name {
@@ -22,7 +22,7 @@
   font-size: 4vh;
   font-weight: 300;
 }
-.descriptionBox {
+.descriptionArea {
   width: 90%;
 }
 
@@ -37,7 +37,7 @@
   object-fit: cover;
 }
 
-.skillBox {
+.skillArea {
   margin-bottom: 4vh;
   height: 34vh;
 }

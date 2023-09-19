@@ -1,36 +1,84 @@
 .main {
   width: 80%;
-  margin: 5vh auto;
+  margin-top: 0;
+  margin: 1vh auto;
   padding-bottom: 8vh;
   text-align: center;
 }
 
 .p {
   margin: 5vh auto;
+  margin-top: 0;
 }
 
-.upper {
-  margin: 3vh;
-}
+/* フォーム */
 .input {
   height: 4.5vh;
   width: 20vw;
   padding-left: 1.5vh;
   border-radius: 1.2vh;
   margin: 2vh;
-  margin-bottom: 1.2vh;
+  margin-bottom: 0;
   border: 1px solid black;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
-
 .email {
   margin-left: 2vh;
+}
+.commentArea {
+  margin: 3vh;
 }
 .comment {
   height: 25vh;
   width: 42vw;
   padding: 2vh 1.5vh;
   border-radius: 1.2vh;
-  margin-bottom: 4vh;
   border: 1px solid black;
-  font-family: "Klee One", "Inter", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+/* エラー処理 */
+.error {
+  color: rgb(184, 96, 96);
+  font-size: 2.3vh;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+.errorName {
+  margin-top: 1vh;
+}
+
+/* ボタン */
+.btnArea {
+  position: relative;
+  height: 5vh;
+  width: 5vw;
+  margin: auto;
+  margin-bottom: 3vh;
+  text-align: start;
+}
+.btnArea:hover {
+  transform: translateY(3px);
+}
+
+.btn {
+  height: 4.5vh;
+  width: 4.5vw;
+  font-size: 2.8vh;
+  background-color: rgba(255, 255, 255, 0.169);
+  border: 1px solid black;
+  z-index: 1;
+  position: absolute;
+}
+.btn:disabled {
+  color: rgb(234, 235, 235);
+  background-color: rgb(160, 160, 160);
+}
+.decorationBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 93%;
+  height: 86%;
+  background-color: rgba(139, 171, 178, 0.3);
+  z-index: 0;
 }

@@ -1,64 +1,87 @@
 "use client";
 import styles from "@/app/styles/contact.module.css";
-import AllButton from "@/components/allButton";
-import { useState } from "react";
-import sendHandler from "./sendHandler";
+import { useForm } from "react-hook-form";
+import { ReactNode } from "react";
 
 export default function Form() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
+  //react-hook-formのメソッドを用意
+  const {
+    register, //入力された値を参照する
+    handleSubmit,
+    formState: { errors, isValid, isSubmitting },
+  } = useForm({
+    //初回のバリデーション実行タイミング
+    mode: "onBlur",
+  });
+
+  const onSubmit = (data: any) => {
+    console.log(data);
+  };
 
   return (
-    <div className={styles.main}>
-      <p className={styles.p}>
-        何かございましたら、下記のフォームからご連絡ください。
-      </p>
-      <form action="send">
-        <div className={styles.upper}>
-          <label htmlFor="name" />
-          <input
-            id="name"
-            type="text"
-            name="yourname"
-            placeholder="name"
-            className={`${styles.name} ${styles.input}`}
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-          />
-          <label htmlFor="email" />
-          <input
-            id="email"
-            type="text"
-            name="email"
-            placeholder="e-mail"
-            className={`${styles.email} ${styles.input}`}
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-        </div>
-        <div>
-          <label htmlFor="comment" />
-          <textarea
-            id="comment"
-            name="comment"
-            placeholder="comment"
-            className={styles.comment}
-            value={comment}
-            onChange={(e) => {
-              setComment(e.target.value);
-            }}
-          />
-        </div>
-        <AllButton
-          text="送信"
-          action={() => sendHandler({ name, email, comment })}
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className={styles.upper}>
+        <label htmlFor="name" />
+        <input
+          id="name"
+          type="text"
+          placeholder="name"
+          className={`${styles.name} ${styles.input}`}
+          maxLength={12}
+          onSubmit={onSubmit}
+          {...register("name", {
+            required: "*名前を入力してください",
+          })}
         />
-      </form>
-    </div>
+
+        <label htmlFor="email" />
+        <input
+          id="email"
+          type="text"
+          placeholder="e-mail"
+          className={`${styles.email} ${styles.input}`}
+          onSubmit={onSubmit}
+          {...register("email", {
+            required: "*メールアドレスを入力してください",
+            pattern: {
+              value:
+                /^[a-zA-Z0-9_.+-]+@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/,
+              message: "*正しいメールアドレスを入力してください",
+            },
+          })}
+        />
+      </div>
+      <p className={`${styles.errorName} ${styles.error}`}>
+        {errors.name?.message as ReactNode}
+      </p>
+      <p className={`${styles.errorEmail} ${styles.error}`}>
+        {errors.email?.message as ReactNode}
+      </p>
+      <div className={styles.commentArea}>
+        <label htmlFor="comment" />
+        <textarea
+          id="comment"
+          placeholder="comment"
+          className={styles.comment}
+          onSubmit={onSubmit}
+          {...register("comment", {
+            required: "*コメントを入力してください",
+          })}
+        />
+        <p className={`${styles.errorComment} ${styles.error}`}>
+          {errors.comment?.message as ReactNode}
+        </p>
+      </div>
+      <div className={styles.btnArea}>
+        <button
+          type="submit"
+          className={styles.btn}
+          disabled={!isValid || isSubmitting}
+        >
+          送信
+        </button>
+        <div className={styles.decorationBox} />
+      </div>
+    </form>
   );
 }

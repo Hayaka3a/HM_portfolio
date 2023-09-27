@@ -1,5 +1,5 @@
+import Ameba from "@/components/Ameba";
 import PageTitle from "@/components/pageTitle";
-import Preparing from "@/components/preparing";
 import Top from "@/components/top";
 
 export default function Production() {
@@ -7,7 +7,7 @@ export default function Production() {
     <>
       <Top />
       <PageTitle title="production" />
-      <Preparing />
+      <Ameba text={"coming soon"} />
     </>
   );
 }

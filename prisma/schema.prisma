@@ -14,6 +14,7 @@ datasource db {
  model Productions {
    id        Int      @id @default(autoincrement())
    title     String
+   technology String
    content   String
    image1 String
    image2 String

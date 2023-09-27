@@ -1,14 +1,14 @@
 import PageTitle from "@/components/pageTitle";
 import Top from "@/components/top";
 import styles from "@/app/styles/photo.module.css";
-import Preparing from "../../components/preparing";
+import Ameba from "@/components/Ameba";
 
-export default function About() {
+export default function Photo() {
   return (
     <>
       <Top />
       <PageTitle title="photo" />
-      <Preparing />
+      <Ameba text={"coming soon"} />
     </>
   );
 }

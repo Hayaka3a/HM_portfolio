@@ -2,7 +2,7 @@
 import styles from "@/components/styles/preparing.module.css";
 import { Player } from "@lottiefiles/react-lottie-player";
 
-export default function Preparing() {
+export default function Ameba({ text }: { text: string }) {
   return (
     <>
       <div className={styles.main}>
@@ -15,7 +15,7 @@ export default function Preparing() {
           style={{ height: "300px", width: "300px" }}
         />
         <div className={styles.overlayText}>
-          <p className={styles.text}>Coming soon</p>
+          <p className={styles.text}>{text}</p>
         </div>
       </div>
     </>

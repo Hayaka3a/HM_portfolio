@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+
+ model Productions {
+   id        Int      @id @default(autoincrement())
+   title     String
+   technology String
+   content   String
+   image1 String
+   image2 String
+   image3 String
+   image4 String
+   createdAt DateTime @default(now()) @map("created_at")
+
+   @@map("profuctions")
+ }
+
+  model Photos {
+   id        Int      @id @default(autoincrement())
+   title     String
+   image String
+   createdAt DateTime @default(now()) @map("created_at")
+
+   @@map("photos")
+ }

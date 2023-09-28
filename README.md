@@ -1,12 +1,13 @@
 # HM_portfolio
 
-## 使用ライブラリ
+## 使用技術(ライブラリ)
 
-npm にてインストール
-
+- next.js
+- mysql-server
+- prisma
+- prisma/client
 - lottie-web
 - lottiefiles/react-lottie-player
-- firebase-tools
 
 ## Note
 

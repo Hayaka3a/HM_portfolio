@@ -3,14 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "/",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@prisma/client": "^5.3.1",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -21,5 +16,14 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.46.1",
     "typescript": "5.2.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "prisma": "^5.3.1"
   }
 }

@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/components/styles/preparing.module.css";
+import styles from "@/styles/preparing.module.css";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 export default function Ameba({ text }: { text: string }) {

@@ -1,7 +1,8 @@
 "use client";
-import styles from "@/app/styles/contact.module.css";
+import styles from "@/styles/contact.module.css";
 import { useForm } from "react-hook-form";
 import { ReactNode } from "react";
+import { Router } from "next/router";
 
 export default function Form() {
   //react-hook-formのメソッドを用意
@@ -14,12 +15,20 @@ export default function Form() {
     mode: "onBlur",
   });
 
-  const onSubmit = (data: any) => {
-    console.log(data);
+  const onSubmitForm = async (data: any) => {
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: data,
+    }).then((data) => {
+      window.location.reload;
+    });
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmitForm)}>
       <div className={styles.upper}>
         <label htmlFor="name" />
         <input
@@ -28,7 +37,7 @@ export default function Form() {
           placeholder="name"
           className={`${styles.name} ${styles.input}`}
           maxLength={12}
-          onSubmit={onSubmit}
+          onSubmit={onSubmitForm}
           {...register("name", {
             required: "*名前を入力してください",
           })}
@@ -40,7 +49,7 @@ export default function Form() {
           type="text"
           placeholder="e-mail"
           className={`${styles.email} ${styles.input}`}
-          onSubmit={onSubmit}
+          onSubmit={onSubmitForm}
           {...register("email", {
             required: "*メールアドレスを入力してください",
             pattern: {
@@ -63,7 +72,7 @@ export default function Form() {
           id="comment"
           placeholder="comment"
           className={styles.comment}
-          onSubmit={onSubmit}
+          onSubmit={onSubmitForm}
           {...register("comment", {
             required: "*コメントを入力してください",
           })}

@@ -1,7 +1,7 @@
 import PageTitle from "@/components/pageTitle";
 import Top from "@/components/top";
 import Form from "./form";
-import styles from "@/app/styles/contact.module.css";
+import styles from "@/styles/contact.module.css";
 
 export default function Contact() {
   return (

@@ -1,8 +1,7 @@
 "use client";
-
 import Link from "next/link";
-import styles from "./styles/menubar.module.css";
-import { useEffect, useState } from "react";
+import styles from "../styles/menubar.module.css";
+import { useState } from "react";
 
 export default function Menubar() {
   const [menuOpen, setMenuOpen] = useState(false);

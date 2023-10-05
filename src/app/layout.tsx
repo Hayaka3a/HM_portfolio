@@ -1,7 +1,7 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Menuber from "./menuber";
+import Menuber from "../components/menuber";
 import Loading from "./loading";
 import { Suspense } from "react";
 

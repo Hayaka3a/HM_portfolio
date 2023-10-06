@@ -1,7 +1,7 @@
 import { prisma } from "@/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export async function contactAPI(req: NextApiRequest, res: NextApiResponse) {
+async function contactAPI(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
     console.log("送信するよ");
     const contact = await prisma.contact.create({

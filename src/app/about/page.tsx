@@ -1,5 +1,5 @@
 import Top from "@/components/top";
-import styles from "../styles/about.module.css";
+import styles from "@/styles/about.module.css";
 import PageTitle from "@/components/pageTitle";
 import Heading from "@/components/heading";
 

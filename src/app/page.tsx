@@ -1,5 +1,7 @@
 import styles from "../styles/page.module.css";
 
+require("dotenv").config();
+
 export default function Home() {
   return (
     <main className={styles.main}>

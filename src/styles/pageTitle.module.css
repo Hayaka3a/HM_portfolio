@@ -1,0 +1,40 @@
+.pageTitleBox {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 50%;
+  text-align: right;
+  margin-left: auto;
+  position: relative;
+}
+
+.pageTitle {
+  font-weight: 200;
+  letter-spacing: 5px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  opacity: 0; /* 初期状態では非表示 */
+  animation: fadeInTitle 0.5s 0.5s forwards;
+}
+
+.pageTitleLine {
+  position: absolute;
+  right: 0; /* 初期位置を右端に配置 */
+  width: 0;
+  height: 0.5vh; /* 線の高さ */
+  background: #8babb2; /* 線の色 */
+  animation: extendLine 0.5s forwards;
+  transform-origin: right; /* 伸縮の起点を右端に設定 */
+}
+
+@keyframes extendLine {
+  to {
+    width: 100%; /* ラインを左から右へ伸縮 */
+  }
+}
+
+@keyframes fadeInTitle {
+  to {
+    opacity: 1; /* タイトルをふわっと表示 */
+  }
+}

@@ -104,20 +104,6 @@ a {
   }
 }
 
-.pageTitleBox {
-  margin-top: 5vh;
-  margin-bottom: 10vh;
-  width: 50%;
-  text-align: right;
-  border-bottom: 1.3px solid #8babb2;
-  margin-left: auto;
-}
-.pageTitle {
-  font-weight: 200;
-  letter-spacing: 5px;
-  text-align: left;
-}
-
 .headingBox {
   position: relative;
   height: 7vh;

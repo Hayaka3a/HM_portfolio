@@ -22,8 +22,8 @@ export default function ProductionsList() {
     <div className={styles.main}>
       {productions?.map((data) => {
         return (
-          <Link href={`/production/${data.url}`}>
-            <div key={data.id} className={styles.imgBox}>
+          <Link href={`/production/${data.url}`} key={data.id}>
+            <div className={styles.imgBox}>
               <div className={styles.imgOverlay}>
                 <img
                   src={data.image1}

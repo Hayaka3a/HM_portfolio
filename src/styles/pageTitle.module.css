@@ -21,7 +21,7 @@
   position: absolute;
   right: 0; /* 初期位置を右端に配置 */
   width: 0;
-  height: 0.5vh; /* 線の高さ */
+  height: 0.3vh; /* 線の高さ */
   background: #8babb2; /* 線の色 */
   animation: extendLine 0.5s forwards;
   transform-origin: right; /* 伸縮の起点を右端に設定 */

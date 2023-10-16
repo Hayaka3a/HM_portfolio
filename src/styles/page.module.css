@@ -10,15 +10,39 @@
   height: 100%;
 }
 
+.sidebar {
+  width: 5%;
+  animation: slideinLeft 3s;
+}
+@keyframes slideinLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .photo {
   width: 100%; /*横幅に合わせて設置*/
   height: 100vh;
   object-fit: cover;
   object-position: 50% 65%; /*画像の縦位置調整*/
-}
 
-.sidebar {
-  width: 5%;
+  animation-name: fadeInAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .link {

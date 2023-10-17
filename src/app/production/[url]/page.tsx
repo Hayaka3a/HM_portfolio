@@ -2,11 +2,12 @@
 import { production } from "@/type/production";
 import { useEffect, useState } from "react";
 import styles from "@/styles/production.module.css";
-import Top from "@/components/top";
+import TopLink from "@/components/topLink";
 import getProduction from "../getProduction";
 import Loading from "@/app/loading";
 import Slider from "@/components/slider";
 import Heading from "@/components/heading";
+import PageTop from "@/components/pageTop";
 
 export default function production(props: any) {
   const [production, setProduction] = useState<production | undefined>();
@@ -24,11 +25,12 @@ export default function production(props: any) {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 700);
+  }, 2000);
 
   return (
     <>
-      <Top />
+      <TopLink />
+      <PageTop />
       <div className={styles.main}>
         {!isLoading && production ? (
           <div>

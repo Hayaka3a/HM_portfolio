@@ -1,13 +1,15 @@
-import Top from "@/components/top";
+import TopLink from "@/components/topLink";
 import styles from "@/styles/about.module.css";
 import PageTitle from "@/components/pageTitle";
 import Heading from "@/components/heading";
+import PageTop from "@/components/pageTop";
 
 export default function About() {
   return (
     <>
-      <Top />
+      <TopLink />
       <PageTitle title="about" />
+      <PageTop />
       <div className={styles.main}>
         <Heading title="profile" />
         <div className={styles.plofileArea}>
@@ -21,8 +23,8 @@ export default function About() {
                 神奈川県横浜市出身です。
                 <br /> <br />
                 2022年10月から株式会社ラクスパートナーズにフロントエンドエンジニアとして所属しています。
-                <br />
-                趣味は読書、映画、演劇、飼い猫と遊ぶことです。
+                <br /> <br />
+                趣味はカメラ、読書、映画鑑賞、飼い猫と遊ぶことです。
               </p>
             </div>
           </div>

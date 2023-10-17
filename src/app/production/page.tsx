@@ -1,12 +1,13 @@
-import Ameba from "@/components/Ameba";
 import PageTitle from "@/components/pageTitle";
-import Top from "@/components/top";
+import TopLink from "@/components/topLink";
 import ProductionsList from "./productionsList";
+import PageTop from "@/components/pageTop";
 
 export default function Production() {
   return (
     <>
-      <Top />
+      <TopLink />
+      <PageTop />
       <PageTitle title="production" />
       <ProductionsList />
     </>

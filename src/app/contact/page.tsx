@@ -1,12 +1,12 @@
 import PageTitle from "@/components/pageTitle";
-import Top from "@/components/top";
+import TopLink from "@/components/topLink";
 import Form from "./form";
 import styles from "@/styles/contact.module.css";
 
 export default function Contact() {
   return (
     <>
-      <Top />
+      <TopLink />
       <PageTitle title="contact" />
       <div className={styles.main}>
         <p className={styles.p}>

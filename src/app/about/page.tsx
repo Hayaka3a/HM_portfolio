@@ -1,13 +1,15 @@
-import Top from "@/components/top";
+import TopLink from "@/components/topLink";
 import styles from "@/styles/about.module.css";
 import PageTitle from "@/components/pageTitle";
 import Heading from "@/components/heading";
+import PageTop from "@/components/pageTop";
 
 export default function About() {
   return (
     <>
-      <Top />
+      <TopLink />
       <PageTitle title="about" />
+      <PageTop />
       <div className={styles.main}>
         <Heading title="profile" />
         <div className={styles.plofileArea}>

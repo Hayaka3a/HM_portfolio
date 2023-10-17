@@ -8,6 +8,7 @@
 - prisma/client
 - lottie-web
 - lottiefiles/react-lottie-player
+- swiper@latest
 
 ## Note
 

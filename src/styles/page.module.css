@@ -12,7 +12,7 @@
 
 .sidebar {
   width: 5%;
-  animation: slideinLeft 3s;
+  animation: slideinLeft 2s;
 }
 @keyframes slideinLeft {
   0% {
@@ -30,10 +30,10 @@
   object-position: 50% 65%; /*画像の縦位置調整*/
 
   animation-name: fadeInAnime;
-  animation-duration: 2s;
+  animation-duration: 1.8s;
   animation-fill-mode: forwards;
   opacity: 0;
-  animation-delay: 0.6s;
+  animation-delay: 1s;
 }
 @keyframes fadeInAnime {
   from {

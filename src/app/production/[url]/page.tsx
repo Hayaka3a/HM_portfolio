@@ -24,7 +24,7 @@ export default function production(props: any) {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 700);
+  }, 2000);
 
   return (
     <>

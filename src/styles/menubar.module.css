@@ -92,7 +92,7 @@
     transform: rotate(45deg) translate(2px, 1px);
   }
   .bar:nth-child(3) {
-    transform: rotate(-47deg) translate(6px, -4px);
+    transform: rotate(-47deg) translate(7px, -4px);
   }
   .bar:nth-child(4) {
     opacity: 0;
@@ -101,7 +101,7 @@
 
 .close {
   .bar:nth-child(1) {
-    transform: rotate(-70deg) translate(-15px, -1px);
+    transform: rotate(-70deg) translate(-17px, -2px);
   }
   .bar:nth-child(4) {
     transform: rotate(-70deg) translate(13px, 1px);
@@ -109,9 +109,9 @@
 }
 
 .bar {
-  width: 25px;
-  height: 0.1vh;
-  background-color: #484848;
+  width: 38px;
+  height: 1.1px;
+  background-color: #353b42;
   margin: 4px 0;
   transition: 0.4s;
 }

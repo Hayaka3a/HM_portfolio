@@ -12,36 +12,32 @@ export default function Menubar() {
 
   function buttonSwitch() {
     return menuOpen ? (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="40"
-        height="40"
-        viewBox="0 0 50 51"
-        className={styles.svgClose}
-      >
-        <path d="M1 50.0909L49 0.999977" stroke="black" />
-        <path d="M1 2.09091L49 50.0909" stroke="black" />
-      </svg>
+      <div className={styles.closeBtn}>
+        <img src="/close.png" />
+      </div>
     ) : (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="40"
-        height="40"
-        viewBox="0 0 55 61"
-        className={styles.svgOpen}
-      >
-        <path d="M0 18.0669H55" stroke="black" />
-        <path d="M0 42.2227H55" stroke="black" />
-        <path d="M7.22364 60L24.205 1" stroke="black" />
-        <path d="M27.5001 59.908L44.7961 1.01578" stroke="black" />
-      </svg>
+      <div className={styles.openBtn}>
+        <img src="/open.png" />
+      </div>
     );
   }
 
   return (
     <div className={styles.all}>
       <div className={styles.leftSide} onClick={menuDisplay}>
-        {buttonSwitch()}
+        <div className={styles.hamburgerMenu}>
+          <div
+            className={`${styles.hamburgerIcon} ${
+              menuOpen ? styles.open : styles.close
+            }`}
+            onClick={buttonSwitch}
+          >
+            <div className={styles.bar} />
+            <div className={styles.bar} />
+            <div className={styles.bar} />
+            <div className={styles.bar} />
+          </div>
+        </div>
       </div>
       {menuOpen ? (
         <div className={styles.rightSide}>

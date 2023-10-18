@@ -22,14 +22,13 @@
   width: 100%;
   justify-content: space-between;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.8);
-
-  animation-name: fadeLeftAnime;
+  background-color: #ffffffcc;
+  animation-name: fadeRightAnime;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-@keyframes fadeLeftAnime {
+@keyframes fadeRightAnime {
   from {
     opacity: 0;
     transform: translateX(-100px);
@@ -58,4 +57,61 @@
 .p {
   width: 28vh;
   margin: auto 3%;
+}
+
+.hamburgerMenu {
+  display: flex;
+  align-items: center;
+  animation-name: fadeInAnime;
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.open {
+  .bar:nth-child(1) {
+    opacity: 0;
+  }
+  .bar:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 1px);
+  }
+  .bar:nth-child(3) {
+    transform: rotate(-47deg) translate(6px, -4px);
+  }
+  .bar:nth-child(4) {
+    opacity: 0;
+  }
+}
+
+.close {
+  .bar:nth-child(1) {
+    transform: rotate(-70deg) translate(-15px, -1px);
+  }
+  .bar:nth-child(4) {
+    transform: rotate(-70deg) translate(13px, 1px);
+  }
+}
+
+.bar {
+  width: 25px;
+  height: 0.1vh;
+  background-color: #484848;
+  margin: 4px 0;
+  transition: 0.4s;
 }

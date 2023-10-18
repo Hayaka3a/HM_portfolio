@@ -19,7 +19,7 @@ export default function PageTop() {
           }
           loop
           autoplay
-          style={{ height: "100px", width: "100px" }}
+          style={{ height: "75px", width: "75px" }}
         />
         <div className={styles.overlayText}>
           <p className={styles.text}>▲</p>

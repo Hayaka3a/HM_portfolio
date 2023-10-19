@@ -6,16 +6,10 @@ import styles from "../../styles/productionsList.module.css";
 import Link from "next/link";
 
 export default function ProductionsList() {
-  const [productions, setProductions] = useState<production[]>([]);
+  const [productions, setProductions] = useState<production[] | undefined>([]);
 
   useEffect(() => {
-    async function fetchData() {
-      const data = await getAllProductions();
-      if (data) {
-        setProductions(data);
-      }
-    }
-    fetchData();
+    getAllProductions(setProductions);
   }, []);
 
   return (

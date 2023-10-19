@@ -1,7 +1,107 @@
 .main {
-  width: 80%;
+  width: 100%;
   margin-top: 0;
   margin: 1vh auto;
   padding-bottom: 8vh;
   text-align: center;
+}
+
+/* 一覧 */
+.photoList {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img {
+  height: 34vh;
+  width: 34vh;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2vh;
+  transition: transform 0.3s;
+}
+.img:hover {
+  transform: scale(1.05);
+}
+
+/* 拡大時 */
+.overlay {
+  z-index: 1; /* 重ねた時の順番 */
+
+  /* 画面全体を覆う */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.925);
+
+  /* 画面の中央に要素を表示 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.enlargedImage {
+  height: 85%;
+  margin-bottom: 4.5vh;
+}
+
+/* カテゴリー表示部分 */
+.category {
+  width: 100%;
+  margin-top: 13vh;
+  margin-bottom: 10vh;
+}
+
+.label {
+  margin: auto 5vw;
+  cursor: pointer;
+  display: inline-block;
+  display: inline-block;
+  width: 7vw;
+  line-height: 7vw;
+  text-align: center;
+  color: #222;
+  border: 1px solid #999;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 45px #fff inset;
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+.checkedLabel {
+  margin: auto 5vw;
+  cursor: pointer;
+  display: inline-block;
+  display: inline-block;
+  width: 7vw;
+  line-height: 7vw;
+  text-align: center;
+  color: #a59e5d;
+  border: 0.2vh solid #ded5b7;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+.input:focus + .label {
+  outline-color: #858585;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.text {
+  font-size: 1.5vw;
 }

@@ -1,5 +1,3 @@
-import { type } from "os";
-
 export type production = {
   id: number;
   title: string;

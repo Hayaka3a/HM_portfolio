@@ -1,7 +1,10 @@
 import { supabase } from "@/createClient";
 import { production } from "@/type/production";
+import { Dispatch, SetStateAction } from "react";
 
-export default async function getAllProductions() {
+export default async function getAllProductions(
+  setProductions: Dispatch<SetStateAction<production[] | undefined>>
+) {
   const { data, error } = await supabase
     .from("productions")
     .select("id,url,image1,title")
@@ -10,7 +13,8 @@ export default async function getAllProductions() {
   if (error) {
     console.log(error.code, error.message);
   } else if (data) {
-    return data as production[] | undefined;
+    const update = data as production[] | undefined;
+    setProductions(update);
   } else {
     console.log("データが見つかりませんでした");
   }

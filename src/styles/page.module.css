@@ -1,7 +1,7 @@
 .main {
   display: flex;
   overflow: hidden; /* スクロール禁止 */
-
+  z-index: 3;
   height: 100vh;
 }
 
@@ -20,6 +20,12 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sidebar {
+    width: 11vh;
   }
 }
 

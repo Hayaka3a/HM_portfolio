@@ -40,22 +40,24 @@ export default function Menubar() {
       </div>
       {menuOpen ? (
         <div className={styles.rightSide}>
-          <div className={styles.linkArea}>
-            <Link href="/about" className={styles.link}>
-              about
-            </Link>
-            <Link href="/production" className={styles.link}>
-              production
-            </Link>
-            <Link href="/photo" className={styles.link}>
-              photo
-            </Link>
-            <Link href="/contact" className={styles.link}>
-              contact
-            </Link>
-          </div>
+          <nav className={styles.nav}>
+            <ul>
+              <li>
+                <Link href="/about">about</Link>
+              </li>
+              <li>
+                <Link href="/production">production</Link>
+              </li>
+              <li>
+                <Link href="/photo">photo</Link>
+              </li>
+              <li>
+                <Link href="/contact">contact</Link>
+              </li>
+            </ul>
+          </nav>
           <div className={styles.nameArea}>
-            <p className={styles.p}>Hayakawa Miho</p>
+            <p>Hayakawa Miho</p>
             <Link href="https://github.com/Hayaka3a" target="_blank">
               <img alt="GitHub" src="/githubIcon.png" height={50} />
             </Link>

@@ -24,7 +24,7 @@ export default function PhotoList() {
 
   return (
     photos && (
-      <div className={styles.main}>
+      <main className={styles.main}>
         <CategoryRadio category={category} setCategory={setCategory} />
         <div className={styles.photoList}>
           {photos
@@ -50,7 +50,7 @@ export default function PhotoList() {
             />
           </div>
         )}
-      </div>
+      </main>
     )
   );
 }

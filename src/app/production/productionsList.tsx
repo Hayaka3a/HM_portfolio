@@ -13,7 +13,7 @@ export default function ProductionsList() {
   }, []);
 
   return (
-    <div className={styles.main}>
+    <main className={styles.main}>
       {productions?.map((data) => {
         return (
           <Link href={`/production/${data.url}`} key={data.id}>
@@ -30,6 +30,6 @@ export default function ProductionsList() {
           </Link>
         );
       })}
-    </div>
+    </main>
   );
 }

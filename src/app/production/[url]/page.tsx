@@ -31,21 +31,21 @@ export default function production(props: any) {
     <>
       <TopLink />
       <PageTop />
-      <div className={styles.main}>
+      <main className={styles.main}>
         {!isLoading && production ? (
-          <div>
+          <section>
             <Slider data={production} />
-            <div className={styles.title}>{production.title}</div>
-            <div className={styles.fw}>{production.framework}</div>
+            <h1>{production.title}</h1>
+            <h3>{production.framework}</h3>
             <div className={styles.charge}>
               <Heading title="担当" />
               {production.charge}
             </div>
-          </div>
+          </section>
         ) : (
           <Loading />
         )}
-      </div>
+      </main>
     </>
   );
 }

@@ -33,8 +33,7 @@ export default function Menubar() {
             onClick={buttonSwitch}
           >
             <div className={styles.bar} />
-            <div className={styles.bar} />
-            <div className={styles.bar} />
+            {menuOpen ? <></> : <div className={styles.text}>menu</div>}
             <div className={styles.bar} />
           </div>
         </div>

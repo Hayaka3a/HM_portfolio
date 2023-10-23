@@ -8,12 +8,12 @@ export default function Contact() {
     <>
       <TopLink />
       <PageTitle title="contact" />
-      <div className={styles.main}>
+      <main className={styles.main}>
         <p className={styles.p}>
           何かございましたら、下記のフォームからご連絡ください。
         </p>
         <Form />
-      </div>
+      </main>
     </>
   );
 }

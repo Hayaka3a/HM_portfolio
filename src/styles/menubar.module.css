@@ -40,13 +40,16 @@
   }
 }
 
-.linkArea {
-  margin: auto 2%;
+.nav {
+  margin: auto 0;
 }
-
-.link {
+.nav ul {
+  display: flex;
+}
+.nav li {
+  list-style: none;
   font-size: large;
-  margin: auto 8%;
+  margin: auto 10%;
 }
 
 .nameArea {
@@ -54,7 +57,7 @@
   margin: auto 1%;
 }
 
-.p {
+.nameArea p {
   width: 28vh;
   margin: auto 3%;
 }

@@ -38,6 +38,7 @@ export default function PhotoList() {
                 onClick={() => handleImageClick(data.image)}
                 width={120}
                 height={120}
+                loading="lazy"
               />
             ))}
         </div>

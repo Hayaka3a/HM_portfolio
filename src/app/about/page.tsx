@@ -16,8 +16,7 @@ export default function About() {
           <div className={styles.plofileArea}>
             <div className={styles.leftSide}>
               <div className={styles.nameArea}>
-                <h3 className={styles.name}>早川 実穂</h3>
-                <h3 className={styles.name}>Hayakawa Miho</h3>
+                <h3 className={styles.name}>Hayakawa</h3>
               </div>
               <div className={styles.descriptionArea}>
                 <p className={styles.description}>

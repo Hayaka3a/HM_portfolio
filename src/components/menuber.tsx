@@ -57,7 +57,7 @@ export default function Menubar() {
             </ul>
           </nav>
           <div className={styles.nameArea}>
-            <p>Hayakawa Miho</p>
+            <p>Hayakawa</p>
             <Link href="https://github.com/Hayaka3a" target="_blank">
               <img alt="GitHub" src="/githubIcon.png" height={50} />
             </Link>

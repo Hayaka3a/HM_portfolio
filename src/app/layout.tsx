@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "HayakawaM - portfolio",
-  description: "早川実穂のポートフォリオ",
+  description: "Hayakawaのポートフォリオ",
 };
 
 export default function RootLayout({

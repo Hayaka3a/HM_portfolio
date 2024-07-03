@@ -2,7 +2,7 @@
   width: 80%;
   margin-top: 0;
   margin: 1vh auto;
-  padding-bottom: 8vh;
+  padding-bottom: 4rem;
   text-align: center;
 }
 
@@ -49,12 +49,11 @@
 
 /* ボタン */
 .btnArea {
-  position: relative;
   height: 5vh;
-  width: 5vw;
-  margin: auto;
-  margin-bottom: 3vh;
-  text-align: start;
+  margin: auto 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btnArea:hover {
   transform: translateY(3px);

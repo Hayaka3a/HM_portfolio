@@ -9,8 +9,8 @@ import Slider from "@/components/slider";
 import Heading from "@/components/heading";
 import PageTop from "@/components/pageTop";
 
-export default function production(props: any) {
-  const [production, setProduction] = useState<production | undefined>();
+export default function displayproduction(props: any) {
+  const [productionItem, setProduction] = useState<production | undefined>();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -32,14 +32,14 @@ export default function production(props: any) {
       <TopLink />
       <PageTop />
       <main className={styles.main}>
-        {!isLoading && production ? (
+        {!isLoading && productionItem ? (
           <section>
-            <Slider data={production} />
-            <h1>{production.title}</h1>
-            <h3>{production.framework}</h3>
+            <Slider data={productionItem} />
+            <h1>{productionItem.title}</h1>
+            <h3>{productionItem.framework}</h3>
             <div className={styles.charge}>
               <Heading title="担当" />
-              {production.charge}
+              <p className={styles.description}> {productionItem.charge} </p>
             </div>
           </section>
         ) : (

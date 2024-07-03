@@ -1,7 +1,7 @@
 .main {
   width: 80%;
   margin: auto;
-  padding-bottom: 8vh;
+  padding-bottom: 4rem;
 }
 
 .plofileArea {
@@ -19,11 +19,12 @@
 .name {
   margin-right: 1.5vw;
   margin-bottom: 2vh;
-  font-size: 4vh;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 .descriptionArea {
   width: 90%;
+  font-size: 1.2rem;
 }
 
 .rightSide {

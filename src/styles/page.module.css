@@ -11,7 +11,7 @@
 }
 
 .sidebar {
-  width: 5%;
+  width: 5rem;
   animation: slideinLeft 2s;
 }
 @keyframes slideinLeft {
@@ -52,9 +52,12 @@
 }
 
 .link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
   writing-mode: vertical-rl; /* テキストの表示方向を縦書きに */
   text-orientation: upright; /* テキストの向きを調整 */
-  margin-top: 5vh;
-  margin-left: 35%;
-  font-weight: 200;
 }

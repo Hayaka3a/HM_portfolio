@@ -74,7 +74,6 @@ export default function Form() {
         >
           送信
         </button>
-        <div className={styles.decorationBox} />
       </div>
     </form>
   );

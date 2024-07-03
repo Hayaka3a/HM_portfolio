@@ -90,9 +90,8 @@ body {
 }
 
 body {
-  font-size: 3vh;
+  font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: 1.5px;
 }
 
 a {
@@ -108,22 +107,16 @@ a {
 
 .headingBox {
   position: relative;
-  height: 7vh;
-  width: 11vw;
+  width: fit-content;
   margin-bottom: 3vh;
+  padding: 0 1rem;
+  background-color: #c1d4e03b;
+  box-shadow: 0.5rem 0.5rem 0 rgba(139, 171, 178, 0.3);
 }
 .heading {
+  font-size: 2rem;
+  font-weight: 200;
   text-align: left;
   position: relative;
-  font-weight: 200;
   letter-spacing: 3px;
-  margin-bottom: 3vh;
-}
-.decorationBox {
-  position: absolute; /* .decorationBoxを絶対位置指定にする */
-  bottom: 0;
-  right: 0;
-  width: 80%;
-  height: 55%;
-  background-color: rgba(139, 171, 178, 0.4);
 }

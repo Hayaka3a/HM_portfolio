@@ -9,7 +9,7 @@
   margin: 10vh auto;
   margin-bottom: 5vh;
   width: 80%;
-  font-size: 5vh;
+  font-size: 2rem;
   font-weight: 100;
   color: rgb(112, 112, 112);
   font-family: "Zen Kaku Gothic New", sans-serif;
@@ -17,11 +17,15 @@
 }
 
 .main h3 {
-  font-size: 3vh;
+  font-size: 1.3rem;
   font-weight: 100;
 }
 
 .charge {
   margin: 5vh auto;
   width: 80%;
+}
+
+.description {
+  font-size: 1.2rem;
 }

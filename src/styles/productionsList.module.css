@@ -1,7 +1,7 @@
 .main {
   width: 80%;
   margin: 1vh auto;
-  padding-bottom: 8vh;
+  padding-bottom: 4rem;
   text-align: center;
 }
 
@@ -38,6 +38,7 @@
   background: #bbc0db;
   padding: 10px;
   display: none;
+  font-size: 1.3rem;
 }
 
 .imgOverlay:hover .titleOverlay {

@@ -41,21 +41,25 @@
 
 .nav {
   margin: auto 0;
-}
-.nav ul {
   display: flex;
 }
 .nav li {
   list-style: none;
-  font-size: large;
-  margin: auto 10%;
+  font-size: 1.5rem;
+  width: 8rem;
+  text-align: center;
 }
 
 .nameArea {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 11rem;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.name {
+  margin-right: 0.5rem;
+  cursor: default;
 }
 
 .hamburgerMenu {

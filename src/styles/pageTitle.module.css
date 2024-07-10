@@ -1,10 +1,15 @@
 .pageTitleBox {
   margin-top: 5vh;
   margin-bottom: 10vh;
-  width: 50%;
-  text-align: right;
-  margin-left: auto;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 19rem;
+    margin-left: auto;
+  }
+  @media screen and (max-width: 767px) {
+    width: 50%;
+  }
 }
 
 .pageTitle {
@@ -17,16 +22,28 @@
   opacity: 0; /* 初期状態では非表示 */
   animation: fadeInTitle 1.5s 1.5s forwards;
   animation-delay: 0.9s;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 1rem;
+  }
 }
 
 .pageTitleLine {
   position: absolute;
-  right: 0; /* 初期位置を右端に配置 */
   width: 0;
   height: 0.3vh; /* 線の高さ */
   background: #8babb2; /* 線の色 */
   animation: extendLine 0.8s forwards;
-  transform-origin: right; /* 伸縮の起点を右端に設定 */
+
+  @media screen and (min-width: 768px) {
+    right: 0; /* 初期位置を右端に配置 */
+    transform-origin: right; /* 伸縮の起点を右端に設定 */
+  }
+  @media screen and (max-width: 767px) {
+    left: 0;
+  }
 }
 
 @keyframes extendLine {

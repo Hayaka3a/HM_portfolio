@@ -1,36 +1,48 @@
 .main {
-  width: 80%;
   margin-top: 0;
   margin: 1vh auto;
   padding-bottom: 4rem;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 3rem;
+  }
 }
 
 .p {
   margin: 5vh auto;
   margin-top: 0;
+  font-size: 1.4rem;
 }
 
 /* フォーム */
+.upper {
+  display: flex;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
 .input {
   height: 4.5vh;
-  width: 20vw;
-  padding-left: 1.5vh;
+  width: 100%;
+  padding: 0 1.5vh;
   border-radius: 1.2vh;
-  margin: 2vh;
-  margin-bottom: 0;
   border: 1px solid black;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
-.email {
-  margin-left: 2vh;
-}
-.commentArea {
-  margin: 3vh;
-}
+
 .comment {
-  height: 25vh;
-  width: 42vw;
+  height: 11rem;
+  width: 100%;
   padding: 2vh 1.5vh;
   border-radius: 1.2vh;
   border: 1px solid black;

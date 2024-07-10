@@ -18,7 +18,6 @@ export default function Form() {
   return (
     <form onSubmit={handleSubmit(onSubmitForm)}>
       <div className={styles.upper}>
-        <label htmlFor="name" />
         <input
           id="name"
           type="text"
@@ -29,8 +28,6 @@ export default function Form() {
             required: "*名前を入力してください",
           })}
         />
-
-        <label htmlFor="email" />
         <input
           id="email"
           type="text"

@@ -8,9 +8,7 @@ export default function Home() {
       <div className={styles.sidebar}>
         <div className={styles.link}>HAYAKAWA</div>
       </div>
-      <div className={styles.mainVisualBox}>
-        <img className={styles.photo} alt="main" src="/main.jpg" />
-      </div>
+      <img className={styles.photo} alt="main" src="/main.jpg" />
     </main>
   );
 }

@@ -40,31 +40,30 @@ export default function Menubar() {
       </div>
       {menuOpen ? (
         <div className={styles.rightSide}>
-          <nav className={styles.nav}>
-            <ul>
-              <li>
-                <Link href="/about">about</Link>
-              </li>
-              <li>
-                <Link href="/production">production</Link>
-              </li>
-              <li>
-                <Link href="/photo">photo</Link>
-              </li>
-              <li>
-                <Link href="/contact">contact</Link>
-              </li>
-            </ul>
-          </nav>
+          <ul className={styles.nav}>
+            <li>
+              <Link href="/about">about</Link>
+            </li>
+            <li>
+              <Link href="/production">production</Link>
+            </li>
+            <li>
+              <Link href="/photo">photo</Link>
+            </li>
+            <li>
+              <Link href="/contact">contact</Link>
+            </li>
+          </ul>
+
           <div className={styles.nameArea}>
-            <p>Hayakawa</p>
+            <p className={styles.name}>Hayakawa</p>
             <Link href="https://github.com/Hayaka3a" target="_blank">
               <img alt="GitHub" src="/githubIcon.png" height={50} />
             </Link>
           </div>
         </div>
       ) : (
-        <></>
+        <div className={styles.close}></div>
       )}
     </div>
   );

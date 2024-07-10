@@ -1,7 +1,8 @@
 .all {
   display: flex;
-  width: 100%;
+  justify-content: center;
   height: 4.5rem;
+  width: 100%;
   font-weight: 200;
 
   /* 表示位置 */
@@ -11,7 +12,7 @@
 }
 
 .leftSide {
-  width: 5rem;
+  min-width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,26 +42,31 @@
 
 .nav {
   margin: auto 0;
-}
-.nav ul {
   display: flex;
 }
 .nav li {
   list-style: none;
-  font-size: large;
-  margin: auto 10%;
+  font-size: 1.5rem;
+  width: 8rem;
+  text-align: center;
 }
 
 .nameArea {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 11rem;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.name {
+  margin-right: 0.5rem;
+  cursor: default;
 }
 
 .hamburgerMenu {
   display: flex;
   align-items: center;
+  width: 75%;
   animation-name: fadeInAnime;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
@@ -79,6 +85,7 @@
 .hamburgerIcon {
   display: flex;
   flex-direction: column;
+  width: 100%;
   cursor: pointer;
   transition: 0.4s;
   background-color: white;
@@ -93,8 +100,12 @@
   }
 }
 
+.close {
+  width: 100%;
+}
+
 .bar {
-  width: 3.5rem;
+  width: 100%;
   height: 0.25vh;
   background-color: #4e555c;
 
@@ -105,14 +116,4 @@
   font-size: 1.2rem;
   margin: 0.5vh auto;
   margin-bottom: 1vh;
-}
-
-@media screen and (max-width: 750px) {
-  .leftSide {
-    width: 7.5vh;
-  }
-
-  .hamburgerIcon {
-    margin-left: 3vh;
-  }
 }

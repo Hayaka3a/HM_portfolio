@@ -40,7 +40,7 @@ export default function Menubar() {
       </div>
       {menuOpen ? (
         <div className={styles.rightSide}>
-          <ul className={styles.nav}>
+          <ul className={styles.nav} onClick={menuDisplay}>
             <li>
               <Link href="/about">about</Link>
             </li>
@@ -63,7 +63,7 @@ export default function Menubar() {
           </div>
         </div>
       ) : (
-        <div className={styles.close}></div>
+        <div className={styles.closeRight}></div>
       )}
     </div>
   );

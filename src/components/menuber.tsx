@@ -63,7 +63,7 @@ export default function Menubar() {
           </div>
         </div>
       ) : (
-        <></>
+        <div className={styles.close}></div>
       )}
     </div>
   );

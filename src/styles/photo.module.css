@@ -8,19 +8,22 @@
 
 /* 一覧 */
 .photoList {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 17rem);
+  gap: 1rem 1rem;
+  justify-content: center;
 }
 
 .img {
-  height: 34vh;
-  width: 34vh;
+  max-width: 34rem;
+  min-width: 17rem;
+  height: auto;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 2vh;
   transition: transform 0.3s;
 }
 .img:hover {
@@ -47,8 +50,11 @@
 }
 
 .enlargedImage {
-  height: 85%;
-  margin-bottom: 4.5vh;
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+  padding: 1.6rem;
+  object-fit: contain;
 }
 
 /* カテゴリー表示部分 */
@@ -104,4 +110,8 @@
 
 .text {
   font-size: 1.1rem;
+}
+
+.text:hover {
+  color: #b3b09f;
 }

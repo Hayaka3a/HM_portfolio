@@ -45,7 +45,7 @@
   min-height: 100%;
   object-fit: cover;
   object-position: 50% 65%; /*画像の縦位置調整*/
-
+  overflow-x: hidden;
   animation-name: fadeInAnime;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
